@@ -12,7 +12,7 @@
 		A3C0B7131A39EE0B004B11CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C0B7111A39EE0B004B11CC /* Main.storyboard */; };
 		A3C0B7151A39EE0B004B11CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C0B7141A39EE0B004B11CC /* Images.xcassets */; };
 		A3C0B7181A39EE0B004B11CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C0B7161A39EE0B004B11CC /* LaunchScreen.xib */; };
-		A3C0B7241A39EE0B004B11CC /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7231A39EE0B004B11CC /* ModelTests.swift */; };
+		A3C0B7241A39EE0B004B11CC /* AtomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7231A39EE0B004B11CC /* AtomTests.swift */; };
 		A3C0B72F1A39EEB4004B11CC /* InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B72E1A39EEB4004B11CC /* InterfaceTests.swift */; };
 		A3C0B7311A39F081004B11CC /* MoleculeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7301A39F081004B11CC /* MoleculeMember.swift */; };
 		A3C0B7321A39F081004B11CC /* MoleculeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7301A39F081004B11CC /* MoleculeMember.swift */; };
@@ -20,6 +20,8 @@
 		A3C0B7351A39F08A004B11CC /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7331A39F08A004B11CC /* Atom.swift */; };
 		A3C0B7371A39F094004B11CC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7361A39F094004B11CC /* Group.swift */; };
 		A3C0B7381A39F094004B11CC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7361A39F094004B11CC /* Group.swift */; };
+		A3C0B73B1A3A00E6004B11CC /* GroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7391A3A00E6004B11CC /* GroupTests.swift */; };
+		A3C0B73E1A3A0160004B11CC /* CanaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B73C1A3A0160004B11CC /* CanaryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,13 @@
 		A3C0B7171A39EE0B004B11CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A3C0B71D1A39EE0B004B11CC /* ChemSumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemSumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C0B7221A39EE0B004B11CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3C0B7231A39EE0B004B11CC /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		A3C0B7231A39EE0B004B11CC /* AtomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomTests.swift; sourceTree = "<group>"; };
 		A3C0B72E1A39EEB4004B11CC /* InterfaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceTests.swift; sourceTree = "<group>"; };
 		A3C0B7301A39F081004B11CC /* MoleculeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeMember.swift; sourceTree = "<group>"; };
 		A3C0B7331A39F08A004B11CC /* Atom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
 		A3C0B7361A39F094004B11CC /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A3C0B7391A3A00E6004B11CC /* GroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTests.swift; sourceTree = "<group>"; };
+		A3C0B73C1A3A0160004B11CC /* CanaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanaryTest.swift; path = ../CanaryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,9 @@
 		A3C0B7201A39EE0B004B11CC /* ChemSumTests */ = {
 			isa = PBXGroup;
 			children = (
-				A3C0B7231A39EE0B004B11CC /* ModelTests.swift */,
+				A3C0B73C1A3A0160004B11CC /* CanaryTest.swift */,
+				A3C0B7231A39EE0B004B11CC /* AtomTests.swift */,
+				A3C0B7391A3A00E6004B11CC /* GroupTests.swift */,
 				A3C0B72E1A39EEB4004B11CC /* InterfaceTests.swift */,
 				A3C0B7211A39EE0B004B11CC /* Supporting Files */,
 			);
@@ -247,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C0B7241A39EE0B004B11CC /* ModelTests.swift in Sources */,
+				A3C0B73E1A3A0160004B11CC /* CanaryTest.swift in Sources */,
+				A3C0B7241A39EE0B004B11CC /* AtomTests.swift in Sources */,
+				A3C0B73B1A3A00E6004B11CC /* GroupTests.swift in Sources */,
 				A3C0B72F1A39EEB4004B11CC /* InterfaceTests.swift in Sources */,
 				A3C0B7351A39F08A004B11CC /* Atom.swift in Sources */,
 				A3C0B7381A39F094004B11CC /* Group.swift in Sources */,
