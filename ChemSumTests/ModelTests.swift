@@ -29,7 +29,7 @@ class ChemSumTests: XCTestCase {
     }
     */
     
-    func canaryTest() {
+    func testCanary() {
         XCTAssert(true)
     }
         
