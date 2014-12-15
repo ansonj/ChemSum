@@ -18,6 +18,14 @@ class Group: MoleculeMember {
     var totalWeight: Double {
         return 4.5
     }
-    
-    var contents: [Atom] = []
+	
+	private var contents: [Atom] = []
+	
+	func addAtom(atom: Atom) {
+		contents.append(atom)
+	}
+	
+	func removeLastAtom() {
+		contents.removeLast()
+	}
 }
