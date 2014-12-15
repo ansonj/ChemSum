@@ -12,6 +12,12 @@ class Atom: MoleculeMember {
     init() {
         multiplicity = 1
     }
+	
+	init(symbol: String, weight: Double, multiplicity: Int) {
+		self.symbol = symbol;
+		self.weight = weight;
+		self.multiplicity = multiplicity;
+	}
     
     var niceDescription: String {
         var result = symbol
