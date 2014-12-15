@@ -99,6 +99,7 @@
 			<key>files</key>
 			<array>
 				<string>A3C0B7101A39EE0B004B11CC</string>
+				<string>A3F070141A3E278000D85C10</string>
 				<string>A3C0B70E1A39EE0B004B11CC</string>
 				<string>A3C0B7341A39F08A004B11CC</string>
 				<string>A3C0B7371A39F094004B11CC</string>
@@ -358,11 +359,13 @@
 			<array>
 				<string>A3C0B73E1A3A0160004B11CC</string>
 				<string>A3C0B7241A39EE0B004B11CC</string>
+				<string>A3F070181A3E279200D85C10</string>
 				<string>A3C0B73B1A3A00E6004B11CC</string>
 				<string>A3C0B72F1A39EEB4004B11CC</string>
 				<string>A3C0B7351A39F08A004B11CC</string>
 				<string>A3C0B7381A39F094004B11CC</string>
 				<string>A3C0B7321A39F081004B11CC</string>
+				<string>A3F070151A3E278000D85C10</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -462,6 +465,7 @@
 				<string>A3C0B7391A3A00E6004B11CC</string>
 				<string>A3C0B72E1A39EEB4004B11CC</string>
 				<string>A3C0B7211A39EE0B004B11CC</string>
+				<string>A3F070161A3E279200D85C10</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -789,6 +793,7 @@
 				<string>A3C0B7301A39F081004B11CC</string>
 				<string>A3C0B7331A39F08A004B11CC</string>
 				<string>A3C0B7361A39F094004B11CC</string>
+				<string>A3F070131A3E278000D85C10</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -926,8 +931,6 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>CanaryTest.swift</string>
 			<key>path</key>
 			<string>CanaryTest.swift</string>
 			<key>sourceTree</key>
@@ -937,6 +940,53 @@
 		<dict>
 			<key>fileRef</key>
 			<string>A3C0B73C1A3A0160004B11CC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A3F070131A3E278000D85C10</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Molecule.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3F070141A3E278000D85C10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3F070131A3E278000D85C10</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A3F070151A3E278000D85C10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3F070131A3E278000D85C10</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A3F070161A3E279200D85C10</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MoleculeTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3F070181A3E279200D85C10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3F070161A3E279200D85C10</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
