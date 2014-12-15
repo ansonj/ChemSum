@@ -19,7 +19,7 @@ class Atom: MoleculeMember {
 		self.multiplicity = multiplicity;
 	}
     
-    var niceDescription: String {
+    var description: String {
         var result = symbol
         if multiplicity > 1 {
             result += "<sub>\(multiplicity)</sub>"

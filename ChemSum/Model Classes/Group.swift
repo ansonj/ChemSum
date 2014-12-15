@@ -9,7 +9,7 @@
 import Foundation
 
 class Group: MoleculeMember {
-    var niceDescription: String {
+    var description: String {
         return "Bob"
     }
     

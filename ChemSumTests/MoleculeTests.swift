@@ -22,7 +22,7 @@ class MoleculeTests: XCTestCase {
 		
 		theMolecule.addAtom(carbon)
 		
-		XCTAssertEqual("C", theMolecule.niceDescription)
+		XCTAssertEqual("C", theMolecule.description)
 	}
 	
 	func testAddingMultipleAtoms() {

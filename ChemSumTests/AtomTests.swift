@@ -40,17 +40,17 @@ class AtomTests: XCTestCase {
         XCTAssertEqual(36.3, theAtom.totalWeight)
     }
     
-    func testNiceDescriptionWithoutMult() {
+    func testDescriptionWithoutMult() {
         let symbol = "Na"
         theAtom.symbol = symbol
         
-        XCTAssertEqual(symbol, theAtom.niceDescription)
+        XCTAssertEqual(symbol, theAtom.description)
     }
     
-    func testNiceDescriptionWithMult() {
+    func testDescriptionWithMult() {
         theAtom.symbol = "C"
         theAtom.multiplicity = 3
         
-        XCTAssertEqual("C<sub>3</sub>", theAtom.niceDescription)
+        XCTAssertEqual("C<sub>3</sub>", theAtom.description)
     }
 }

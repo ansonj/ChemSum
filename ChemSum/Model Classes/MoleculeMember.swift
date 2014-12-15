@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol MoleculeMember {
-    var niceDescription: String { get }
+protocol MoleculeMember: Printable {
     var multiplicity: Int { get set }
     var totalWeight: Double { get }
 }

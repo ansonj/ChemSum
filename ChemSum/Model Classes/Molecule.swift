@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Molecule {
 	var members: [MoleculeMember] = []
+class Molecule: Printable {
 	
 	func addAtom(atom: Atom) {
 		members.append(atom)
@@ -23,7 +23,7 @@ class Molecule {
 		return 0
 	}
 	
-	var niceDescription: String {
-		return members[0].niceDescription
+	var description: String {
+		return members[0].description
 	}
 }
