@@ -32,7 +32,11 @@ class GroupTests: XCTestCase {
         XCTAssertEqual(mult, theGroup.multiplicity)
     }
 
-    
-    // testTotalWeight
-    // testNiceDescription
+	func testTotalWeight() {
+		XCTFail("test not implemented")
+	}
+	
+	func testNiceDescription() {
+		XCTFail("test not implemented")
+	}
 }
