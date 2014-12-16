@@ -22,6 +22,7 @@
 		A3C0B7381A39F094004B11CC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7361A39F094004B11CC /* Group.swift */; };
 		A3C0B73B1A3A00E6004B11CC /* GroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B7391A3A00E6004B11CC /* GroupTests.swift */; };
 		A3C0B73E1A3A0160004B11CC /* CanaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0B73C1A3A0160004B11CC /* CanaryTest.swift */; };
+		A3E2721A1A4080B200D07706 /* DoubleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E272191A4080B200D07706 /* DoubleError.swift */; };
 		A3F070141A3E278000D85C10 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F070131A3E278000D85C10 /* Molecule.swift */; };
 		A3F070151A3E278000D85C10 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F070131A3E278000D85C10 /* Molecule.swift */; };
 		A3F070181A3E279200D85C10 /* MoleculeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F070161A3E279200D85C10 /* MoleculeTests.swift */; };
@@ -54,6 +55,7 @@
 		A3C0B7361A39F094004B11CC /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A3C0B7391A3A00E6004B11CC /* GroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTests.swift; sourceTree = "<group>"; };
 		A3C0B73C1A3A0160004B11CC /* CanaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanaryTest.swift; sourceTree = "<group>"; };
+		A3E272191A4080B200D07706 /* DoubleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleError.swift; sourceTree = "<group>"; };
 		A3F070131A3E278000D85C10 /* Molecule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
 		A3F070161A3E279200D85C10 /* MoleculeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				A3C0B7231A39EE0B004B11CC /* AtomTests.swift */,
 				A3C0B7391A3A00E6004B11CC /* GroupTests.swift */,
 				A3F070161A3E279200D85C10 /* MoleculeTests.swift */,
+				A3E272191A4080B200D07706 /* DoubleError.swift */,
 				A3C0B72E1A39EEB4004B11CC /* InterfaceTests.swift */,
 				A3C0B7211A39EE0B004B11CC /* Supporting Files */,
 			);
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C0B73E1A3A0160004B11CC /* CanaryTest.swift in Sources */,
+				A3E2721A1A4080B200D07706 /* DoubleError.swift in Sources */,
 				A3C0B7241A39EE0B004B11CC /* AtomTests.swift in Sources */,
 				A3F070181A3E279200D85C10 /* MoleculeTests.swift in Sources */,
 				A3C0B73B1A3A00E6004B11CC /* GroupTests.swift in Sources */,

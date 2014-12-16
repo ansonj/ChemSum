@@ -37,7 +37,7 @@ class GroupTests: XCTestCase {
 		theGroup.addAtom(Atom(symbol: "B", weight: 01.0, multiplicity: 3))
 		theGroup.addAtom(Atom(symbol: "C", weight: 00.1, multiplicity: 4))
 		
-		XCTAssertEqual(23.4, theGroup.totalWeight)
+		XCTAssertEqualWithAccuracy(23.4, theGroup.totalWeight, DOUBLE_ERROR)
 	}
 	
 	func testTotalWeightWithMult() {
@@ -47,7 +47,7 @@ class GroupTests: XCTestCase {
 
 		theGroup.multiplicity = 3
 		
-		XCTAssertEqual(70.2, theGroup.totalWeight)
+		XCTAssertEqualWithAccuracy(70.2, theGroup.totalWeight, DOUBLE_ERROR)
 	}
 	
 	func testDescription() {
@@ -72,7 +72,7 @@ class GroupTests: XCTestCase {
 		theGroup.addAtom(Atom(symbol: "O", weight: 30, multiplicity: 4))
 
 		theGroup.multiplicity = 3
-				// (H2SO4)3
+
 		XCTAssertEqual("(H<sub>2</sub>SO<sub>4</sub>)<sub>3</sub>", theGroup.description)
 	}
 	

@@ -37,7 +37,7 @@ class AtomTests: XCTestCase {
         theAtom.weight = 12.1
         theAtom.multiplicity = 3
         
-        XCTAssertEqual(36.3, theAtom.totalWeight)
+        XCTAssertEqualWithAccuracy(36.3, theAtom.totalWeight, DOUBLE_ERROR)
     }
     
     func testDescriptionWithoutMult() {
