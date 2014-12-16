@@ -9,17 +9,24 @@
 import Foundation
 
 class Group: MoleculeMember {
+	private var contents: [Atom] = []
+	
     var description: String {
         return "Bob"
     }
     
-    var multiplicity: Int = 1
-    
+	var multiplicity: Int = 1 {
+		didSet {
+			if multiplicity < 1 {
+				multiplicity = 1
+			}
+		}
+	}
+		
     var totalWeight: Double {
-        return 4.5
+		let weight = contents.reduce(0, combine: { $0 + $1.totalWeight })
+		return weight * Double(multiplicity)
     }
-	
-	private var contents: [Atom] = []
 	
 	func addAtom(atom: Atom) {
 		contents.append(atom)
