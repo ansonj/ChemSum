@@ -48,4 +48,12 @@ class MoleculeTests: XCTestCase {
 	func testTotalWeightWithGroup() {
 		XCTFail("test not implemented")
 	}
+	
+	func testDescription() {
+		XCTFail("test not implemented")
+	}
+	
+	func testDescriptionWithGroup() {
+		XCTFail("test not implemented")
+	}
 }
