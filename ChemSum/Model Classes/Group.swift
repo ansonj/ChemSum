@@ -12,7 +12,15 @@ class Group: MoleculeMember {
 	private var contents: [Atom] = []
 	
     var description: String {
-        return "Bob"
+		var result = contents.reduce("(", combine: { $0 + $1.description })
+		
+		result += ")"
+		
+		if multiplicity > 1 {
+			result += "<sub>\(multiplicity)</sub>"
+		}
+		
+		return result
     }
     
 	var multiplicity: Int = 1 {
