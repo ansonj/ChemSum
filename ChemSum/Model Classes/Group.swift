@@ -11,6 +11,12 @@ import Foundation
 class Group: MoleculeMember {
 	private var contents: [Atom] = []
 	
+	convenience init(atoms: [Atom], multiplicity: Int) {
+		self.init()
+		contents.extend(atoms)
+		self.multiplicity = multiplicity
+	}
+	
     var description: String {
 		var result = contents.reduce("(", combine: { $0 + $1.description })
 		

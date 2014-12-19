@@ -83,4 +83,14 @@ class GroupTests: XCTestCase {
 		
 		XCTAssertEqual("(A)", theGroup.description)
 	}
+	
+	func testConvenienceInitializer() {
+		let atomA = Atom(symbol: "A", weight: 1, multiplicity: 1)
+		let atomB = Atom(symbol: "B", weight: 2, multiplicity: 2)
+		
+		let testGroup = Group(atoms: [atomA, atomB], multiplicity: 2)
+		
+		XCTAssertEqual(10, testGroup.totalWeight)
+		XCTAssertEqual("(AB<sub>2</sub>)<sub>2</sub>", testGroup.description)
+	}
 }
