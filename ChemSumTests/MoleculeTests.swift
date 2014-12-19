@@ -20,40 +20,76 @@ class MoleculeTests: XCTestCase {
 	func testAddingAtom() {
 		let carbon = Atom(symbol: "C", weight: 12.011, multiplicity: 1)
 		
-		theMolecule.addAtom(carbon)
+		theMolecule.addMember(carbon)
 		
 		XCTAssertEqual("C", theMolecule.description)
 	}
 	
 	func testAddingMultipleAtoms() {
-		XCTFail("test not implemented")
+		let hydrogen = Atom(symbol: "H", weight: 1.00794, multiplicity: 2)
+		let oxygen = Atom(symbol: "O", weight: 15.999, multiplicity: 1)
+		
+		theMolecule.addMember(hydrogen)
+		theMolecule.addMember(oxygen)
+		
+		XCTAssertEqual("H<sub>2</sub>O", theMolecule.description)
 	}
 	
 	func testRemovingAtom() {
-		XCTFail("test not implemented")
+		let carbon = Atom(symbol: "C", weight: 12.011, multiplicity: 3)
+		let extraCarbon = Atom(symbol: "C", weight: 12.011, multiplicity: 1)
+		
+		theMolecule.addMember(carbon)
+		theMolecule.addMember(extraCarbon)
+		theMolecule.removeLastMember()
+		
+		XCTAssertEqual("C<sub>3</sub>", theMolecule.description)
+	}
+	
+	func testRemovingFromEmptyMolecule() {
+		theMolecule.removeLastMember()
+		
+		XCTAssertEqual("", theMolecule.description)
 	}
 	
 	func testTotalWeight() {
-		XCTFail("test not implemented")
+		let hydrogen = Atom(symbol: "H", weight: 1.00794, multiplicity: 2)
+		let oxygen = Atom(symbol: "O", weight: 15.999, multiplicity: 1)
+		
+		theMolecule.addMember(hydrogen)
+		theMolecule.addMember(oxygen)
+		
+		XCTAssertEqualWithAccuracy(18.01488, theMolecule.totalWeight, DOUBLE_ERROR)
+	}
+	
+	func createMoleculeWithGroup() {
+		let sodium = Atom(symbol: "Na", weight: 22.99, multiplicity: 1)
+		let oxygen = Atom(symbol: "O", weight: 15.999, multiplicity: 1)
+		let hydrogen = Atom(symbol: "H", weight: 1.00794, multiplicity: 1)
+		
+		let group = Group(atoms: [oxygen, hydrogen], multiplicity: 2)
+		
+		theMolecule.addMember(sodium)
+		theMolecule.addMember(group)
 	}
 	
 	func testAddingGroup() {
-		XCTFail("test not implemented")
+		createMoleculeWithGroup()
+		
+		XCTAssertEqual("Na(OH)<sub>2</sub>", theMolecule.description)
 	}
 	
 	func testRemovingLastGroup() {
-		XCTFail("test not implemented")
+		createMoleculeWithGroup()
+		
+		theMolecule.removeLastMember()
+		
+		XCTAssertEqual("Na", theMolecule.description)
 	}
 	
 	func testTotalWeightWithGroup() {
-		XCTFail("test not implemented")
-	}
-	
-	func testDescription() {
-		XCTFail("test not implemented")
-	}
-	
-	func testDescriptionWithGroup() {
-		XCTFail("test not implemented")
+		createMoleculeWithGroup()
+		
+		XCTAssertEqualWithAccuracy(57.00388, theMolecule.totalWeight, DOUBLE_ERROR)
 	}
 }

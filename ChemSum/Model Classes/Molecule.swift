@@ -11,19 +11,21 @@ import Foundation
 class Molecule: Printable {
 	private var members: [MoleculeMember] = []
 	
-	func addAtom(atom: Atom) {
+	func addMember(atom: MoleculeMember) {
 		members.append(atom)
 	}
 	
-	func removeLastAtom() {
-		
+	func removeLastMember() {
+		if members.count > 0 {
+			members.removeLast()
+		}
 	}
 	
 	var totalWeight: Double {
-		return 0
+		return members.reduce(0, combine: { $0 + $1.totalWeight } )
 	}
 	
 	var description: String {
-		return members[0].description
+		return members.reduce("", combine: { $0 + $1.description } )
 	}
 }
